@@ -65,7 +65,6 @@
     margin-bottom: 5%; */
 }
 
-
 /* highlights Section Medium*/
 
 .highlights-container-medium{
@@ -112,6 +111,45 @@
     color: #61ce70 ;
 }
 
+/* Ammenities Section */
+.ammenities-section{
+    text-align: center;
+    margin: 5% 0;
+}
+.ammenities-container{
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/amenity_img.jpg);
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1%;
+    margin-top: 3%;
+}
+.ammenities-build{
+    background-color: #61ce70;
+    margin: 10% 14%;
+    padding: 2% 0%;
+    text-align: center;
+    box-shadow: 0px 0px 15px 10px #439e4f;
+}
+.ammenities-build h3{
+    margin-top: 15px;
+}
+.ammenities-build:hover {
+    cursor: pointer;
+    transform: translate(0, -12px);
+}
+.ammenities-section .heading-section{
+    display: inline-block;
+    background-color: #0F0F0F;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    padding: 2% 8%;
+    box-shadow: 5px 10px 10px rgb(125, 125, 125);
+}
+.ammenities-section .heading-section h1{
+    color: #61ce70 ;
+}
+
 /* Connectivity Section */
 
 .connectivity-container{
@@ -122,7 +160,6 @@
     display: inline-block;
     background-color: #0F0F0F;
     border-radius: 8px;
-    margin-bottom: 2%;
     padding: 2% 8%;
     box-shadow: 5px 10px 10px rgb(125, 125, 125);
 }
@@ -218,6 +255,46 @@
     }
     .highlights-container{
         display: block;
+    }
+}
+
+/* Ammenities Section */
+
+@media screen and (max-width:700px){
+    .ammenities-container{
+        padding: 4% 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ammenities-build{
+        margin: 4% 8%;
+        background-color: #61ce70;
+        box-shadow: 0px 0px 10px 5px #439e4f;
+    }
+    .ammenities-build:hover {
+        cursor: pointer;
+        transform: translate(0, -8px);
+    }
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+    .ammenities-build{
+        margin: 8% 10%;
+        padding: 4%;
+        background-color: #61ce70;
+        box-shadow: 0px 0px 10px 5px #439e4f;
+    }
+    .ammenities-build:hover {
+        cursor: pointer;
+        transform: translate(0, -8px);
+    }
+}
+@media screen and (max-width:1000px){
+    .ammenities-section .heading-section{
+        display: inline-block;
+        background-color: #0F0F0F;
+        border-radius: 8px;
+        padding: 2% 4%;
+        box-shadow: 5px 5px 5px rgb(125, 125, 125);
     }
 }
 
