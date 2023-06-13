@@ -2,6 +2,7 @@
 <html lang="en"></html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -88,7 +89,7 @@
 
 
     <div class="price_container">
-        <h1>Price</h1>
+        <h1>PRICE</h1>
         <div class="price_items">
 
             <div class="price_item">
@@ -177,9 +178,19 @@
     
 
     <div class="floorplan_container" id="floorplan">
-        <h1>Floor Plan</h1>
-        <p>img</p>
-        <p>img</p>
+        <h1>FLOOR PLAN</h1>
+        <div class="fp_images">
+            <div class="floorplan1">
+                <h3>High-Street Shop</h3>
+                <img src="images/fp_used.jpg"> 
+                <button>Enquire Now</button>
+            </div>
+            <div class="floorplan1">
+                <h3>Site-map</h3>
+                <img src="images/fp_used.jpg">
+                <button>Enquire Now</button>
+            </div>
+        </div>
     </div>
 
     <div class="gallery_container" id="gallery">
@@ -192,31 +203,40 @@
 
     <div class="connectivity_container" id="connectivity">
         <h1>Connectivity</h1>
-        <p>Best Location on Noida Expressway</p>
-        <p>Surrounded by Resiential Societies and Institutions</p>
-        <p>Pure Commercial Land Title </p>
-        <p>Expressway facing premium commercial by Saya Group</p>
-        <p>Nearby proposed Metro Station</p>
-        <p>Accessible from 120m Wide Road</p>
-        <p>img of map</p>
+        <div class="connectivity_content">
+            <p>Best Location on Noida Expressway</p>
+            <p>Surrounded by Resiential Societies and Institutions</p>
+            <p>Pure Commercial Land Title </p>
+            <p>Expressway facing premium commercial by Saya Group</p>
+            <p>Nearby proposed Metro Station</p>
+            <p>Accessible from 120m Wide Road</p>
+            <p>img of map</p>
+            
+        </div>
     </div>
 
 
     <div class="contact" id="contact">
-        <div class="contact_left">   
-            <h2>Contact Us</h2> 
-            <p>n1234-5678</p>
-            <p>1234-5678</p>
-            <p>johndoe@gmail.com</p>
+        
+        <div class="contact_top">
+            <div class="contact_left">   
+                <h4>Contact Us</h4>
+                <p>n1234-5678</p>
+                <p>1234-5678</p>
+                <p>johndoe@gmail.com</p>
+            </div>
+            <div class="footer_form_container">
+                <h4>Enquire Now</h4>
+                <form >
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+                    <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
+                    <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
+                    <button type="submit" id="submitbtn">Submit</button>
+                </form>
+            </div>
         </div>
-        <form >
-            <input type="text" id="name" name="name" placeholder="Enter Your Name">
-            <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
-            <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
-            <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
-            <button type="submit" id="submitbtn">Submit</button>
-        </form>
-        <p>Disclaimer:This site is for information purpose only and should not be treated as the official information.</p>
+        <p class="disclaimer">Disclaimer:This site is for information purpose only and should not be treated as the official information.</p>
     </div>
 
 
