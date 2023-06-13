@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    transition: 0.5s ease;
+}
+
+/* Highlights Section */
+
+.highlights-container{
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 2em auto;
+    margin-bottom: 3.5em;
+}
+.highlights_bottom{
+    display: flex;
+    margin-top: 3rem;
+}
+.highlights_bottom img{
+    flex: 3;
+    width: 50%;
+}
+.highlights-container .highlights{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    margin-left: 2.5rem;
+}
+.highlights-container .highlight{
+    background-color: #61ce70;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+.highlights-container .highlight p{
+    color: #0F0F0F;
+}
+.highlights-container .highlight p{
+    color: #0F0F0F;
+    font-weight: 600;
+}
+.highlights-container .heading-section{
+    display: inline-block;
+    background-color: #0F0F0F;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    padding: 2% 8%;
+    box-shadow: 5px 10px 10px rgb(125, 125, 125);
+}
+.highlights-container .heading-section h1{
+    color: #61ce70 ;
+    /* display: inline-block;
+    border-bottom: 4px solid #61ce70;
+    margin-bottom: 5%; */
+}
+
+
+/* Amenities Section Medium*/
+
+.highlights-container-medium{
+    position: relative;
+    text-align: center;
+    margin: 2em auto;
+    margin-bottom: 0;
+}
+.highlights-wrap{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/highlights_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 2.5em;
+}
+.highlights-container-medium .highlights{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+    margin:0 15%;
+}
+.highlights-container-medium .highlight{
+    background-color: #61ce70;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+.highlights-container-medium .highlight p{
+    color: white;
+    font-weight: 900;
+}
+.highlights-container-medium .heading-section{
+    display: inline-block;
+    background-color: #0F0F0F;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    padding: 2% 8%;
+    box-shadow: 5px 10px 10px rgb(125, 125, 125);
+}
+.highlights-container-medium .heading-section h1{
+    color: #61ce70 ;
+}
+
+/* Connectivity Section */
+
+.connectivity-container{
+    margin: 5% 0%;
+    text-align: center;
+}
+.connectivity-container .heading-section{
+    display: inline-block;
+    background-color: #0F0F0F;
+    border-radius: 8px;
+    padding: 2% 8%;
+    box-shadow: 5px 10px 10px rgb(125, 125, 125);
+}
+.connectivity-container .heading-section h1{
+    color: #61ce70 ;
+}
+.connectivity-wrap{
+    background-color: #61ce70;
+    display: flex;
+    margin-top: 5%;
+    padding: 4% 0%;
+}
+.connectivity{
+    margin: 1% 10%;
+    text-align: left;
+}
+.connectivity-column1{
+    line-height: 30px;
+}
+.connectivity-column1 h1{
+    font-size: xx-large;
+    font-weight: 800;
+}
+.connectivity-column1 h2{
+    font-size: x-large;
+    margin-bottom: 3%;
+}
+.connectivity-column2{
+    margin-left: 2%;
+    margin-top: 4%;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+}
+.connectivity-column2 li{
+    font-size: large;
+    list-style-type: circle;
+}
+.connectivity-img img{
+    height: 400px;
+}
+
+/* Media Queries */
+
+/* Highlights Section */
+
+@media screen and (max-width:1000px) {
+    .highlights-container-medium .highlights{
+        margin: 0 8%;
+    }
+}
+@media screen and (max-width:800px){
+    .highlights-container-medium .highlights{
+        margin: 0 3%;
+    }
+}
+@media screen and (max-width:1000px){
+    .highlights-container{
+        display: none;
+    }
+    .highlights-container-medium{
+        display: block;
+    }
+}
+@media screen and (min-width:1000px){
+    .highlights-container-medium{
+        display: none;
+    }
+    .highlights-container{
+        display: block;
+    }
+}
+
+/* Connectivity Section */
+
+@media screen and (max-width:650px){
+    .connectivity-wrap{
+        flex-direction: column;
+    }
+    .connectivity{
+        margin: 2% 8%;
+        text-align: left;
+    }
+    .connectivity-column1 h1{
+        font-size: x-large;
+        font-weight: 700;
+    }
+    .connectivity-column1 h2{
+        font-size: large;
+        margin-bottom: 3%;
+    }
+    .connectivity-column2{
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .connectivity-column2 li{
+        font-size: small;
+        list-style-type: circle;
+    }
+    .connectivity-img img{
+        margin: 4% 0%;
+        height: 350px;
+    }
+}
+@media screen and (min-width:650px) and (max-width:900px){
+    .connectivity-wrap{
+        flex-direction: column;
+    }
+    .connectivity{
+        margin: 2% 8%;
+    }
+    .connectivity-column1 h1{
+        font-size: xx-large;
+        font-weight: 550;
+    }
+    .connectivity-column1 h2{
+        font-size: x-large;
+        margin-bottom: 3%;
+    }
+    .connectivity-column2{
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .connectivity-column2 li{
+        font-size: medium;
+        list-style-type: circle;
+    }
+    .connectivity-img img{
+        margin: 4% 0%;
+        height: 450px;
+        width: 600px;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1350px){
+    .connectivity{
+        margin: 0% 8% 0% 0;
+        text-align: left;
+    }
+    .connectivity-wrap{
+    align-items: center;
+    justify-content: center;
+    }
+    .connectivity-column1 h1{
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .connectivity-column1 h2{
+        font-size: large;
+        margin-bottom: 2%;
+    }
+    .connectivity-column2{
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    .connectivity-column2 li{
+        font-size: medium;
+        list-style-type: circle;
+    }
+    .connectivity-img img{
+        margin: 5% 0%;
+        height: 300px;
+        width: 300px;
+    }
+}
