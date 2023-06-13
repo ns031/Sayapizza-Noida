@@ -2,222 +2,105 @@
 <html lang="en"></html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    import Swal from 'sweetalert2';
+    const Swal=require('sweetalert2');
+</script>
 </head>
-
 
 <body>
 
-    <nav>
-        <p><a href="#home">Home</a></p>
-        <p><a href="#overview">Overview</a></p>
-        <p><a href="#highlights">Highlights</a></p>
-        <p><a href="#amenities">Amenities</a></p>
-        <p><a href="#price">Price</a></p>
-        <p><a href="#floorplan">Floor Plan</a></p>
-        <p><a href="#gallery">Gallery</a></p>
-        <p><a href="#connectivity">Connectivity</a></p>
-        <p><a href="#contact">Contact Us</a></p>
-    </nav>
+    <div class="header">
+        <img src="images/builder-logo.png" alt="">
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
+        <nav class="navbar-container">
+            <p><a href="#home">Home</a></p>
+            <p><a href="#overview">Overview</a></p>
+            <p><a href="#highlights">Highlights</a></p>
+            <p><a href="#amenities">Amenities</a></p>
+            <p><a href="#price">Price</a></p>
+            <p><a href="#floorplan">Floor Plan</a></p>
+            <p><a href="#gallery">Gallery</a></p>
+            <p><a href="#connectivity">Connectivity</a></p>
+            <p><a href="#contact">Contact Us</a></p>
+        </nav>
+    </div>
 
-    <div class="home_container"  id="home">
-        <h1>SAYA PIAZZA</h1>
-        <h2>Sector 131, Noida</h2>
-        <h3>Hi-Street Shop and Food Court</h3>
-        <h3>Starting from 41.91 Lakh* Onwards</h3>
-        <div>
-            <p>Payment Plan</p>
-            <p>40-60</p>
+    <div class="banner"></div>
+    <div class="welcome-content"  id="home">
+        <div class="heading-container">
+            <h1>SAYA PIAZZA</h1>
+            <p>Sector 131, Noida</p>
+            <p>Hi-Street Shop and Food Court</p>
+            <h3>Starting from ₹41.91 Lakh* Onwards</h3>
+            <div class="wel-props">
+                <p>Surrounded by 50000 HNI Familes</p>
+                <p>12% Return till Possesion</p>
+                <p>Rs. 150/Sq.Ft Lease Guarantee</p>
+            </div>
+            <div class="welcome-container">
+                <div class="payment-plan">
+                    <h5>Payment Plan</h5>
+                    <p>40-60</p>
+                </div>
+                <div class="call">
+                    <h5>Call Us</h5>
+                    <p>123456/123456</p>
+                </div>
+            </div>
         </div>
+         <div class="form-container">
+            <h2>Enquire Now!</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+                <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
+                <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
+                <button type="submit" id="submitbtn">Submit</button>
+            </form>
+         </div>
+    </div>
 
-        <div>
-            <p>Surrounded by 50000 HNI Familes</p>
-            <p>12% Return till Possesion</p>
-            <p>Rs. 150/Sq.Ft Lease Guarantee</p>
+    <!-- Overview Section -->
+    <div class="overview-container" id="overview">
+        <div class="heading-section">
+            <h1>Overview</h1>
         </div>
-
-       <div>
-        <p>Call Us</p>
-        <p>123456/123456</p>
-       </div>
-
-        <h2>Enquire Now!</h2>
-         <form>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name">
-            <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
-            <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
-            <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
-            <button type="submit" id="submitbtn">Submit</button>
-        </form>
-    </div>
-
-
-    <div class="overview_container" id="overview">
-        <h1>Overview</h1>
-        <h2>SAYA PIAZZA</h2>
-        <h3>Sector 131, Noida</h3>
-        <p>Saya Piazza, located in Sector 131 on the Noida Motorway, is about to transform the way people shop. The mall is well situated and near a catchment area with more than 50,000 families. The lovely facade will welcome customers and lead them into the opulent atmosphere of the mall. Saya Piazza is positioned to be the pinnacle of recreational and commercial activities thanks to its intricate design and lavish ornamentation. In addition to grandeur, the building will demonstrate efficiency and provide a place for indulgence. Saya Piazza will provide a shopping experience that is so exceptional and rich that everything else will seem ordinary.</p>
-    </div>
-
-    <div class="highlights_container" id="highlights">
-        <h1>Highlights</h1>
-
-        <p>One Stop Destination</p>
-        <p>Premium Brands</p>
-        <p>Astonishing Landmark</p>
-        <p>Strategic Location</p>
-        <p>Low Maintenance Shops</p>
-        <p>Within Close Proximity to South-Delhi</p>
-        <p>3 side Corner Plot</p>
-        <p>25 years of Saya exceptional delivery record</p>
-    </div>
-
-    <div class="amenities_container" id="amenities">
-        <h1>Amenities</h1>
-
-        <p>Parking</p>
-        <p>24*7 Security</p>
-        <p>WiFi</p>
-        <p>Lift</p>
-        <p>CCTV Surveillence</p>
-        <p>100% Power Backup</p>
-    </div>
-
-
-
-
-
-    <div class="price_container">
-        <h1>Price</h1>
-        <div class="price_items">
-
-            <div class="price_item">
-                <div class="price_higher">
-                    <p>TYPE</p>
-                    <p>Hi-Street Shop</p>
-                    <p>(LGF)</p>
-                </div>
-                <div class="price_lower">
-                    <p>Carpet Area</p>
-                    <p>200 Sq.ft</p>
-                    <p>Starting from</p>
-                    <p>Rs. 57.90 Lakh Onwards*</p>
-                    <button>Enquire Now</button>
-                </div>
-
+        <div class="overview-wrap">
+            <img src="images/overview/overview-img1.jpg" alt="">
+           <div class="overview-content">
+            <div>
+                <h2>SAYA PIAZZA</h2>
+                <h3>Sector 131, Noida</h3>
             </div>
-
-            <div class="price_item">
-                <div class="price_higher">
-                    <p>TYPE</p>
-                    <p>Hi-Street Shop</p>
-                    <p>(GF)</p>
-                </div>
-                <div class="price_lower">
-                    <p>Carpet Area</p>
-                    <p>207 Sq.ft</p>
-                    <p>Starting from</p>
-                    <p>Rs. 76.48 Lakh Onwards*</p>
-                    <button>Enquire Now</button>
-                </div>
-
-            </div>
-            <div class="price_item">
-                <div class="price_higher">
-                    <p>TYPE</p>
-                    <p>Hi-Street Shop</p>
-                    <p>(1st Floor)</p>
-                </div>
-                <div class="price_lower">
-                    <p>Carpet Area</p>
-                    <p>168 Sq.ft</p>
-                    <p>Starting from</p>
-                    <p>Rs. 41.91 Lakh Onwards*</p>
-                    <button>Enquire Now</button>
-                </div>
-
-            </div>
-
-            <div class="price_item">
-                <div class="price_higher">
-                    <p>TYPE</p>
-                    <p>Hi-Street Shop</p>
-                    <p>(2nd Floor)</p>
-                </div>
-                <div class="price_lower">
-                    <p>Carpet Area</p>
-                    <p>175 Sq.ft</p>
-                    <p>Starting from</p>
-                    <p>Rs. 41.91 Lakh Onwards*</p>
-                    <button>Enquire Now</button>
-                </div>
-            </div>
-
-            <div class="price_item">
-                <div class="price_higher">
-                    <p>TYPE</p>
-                    <p>Food Court</p>
-                    <p>(3rd Floor)</p>
-                </div>
-                <div class="price_lower">
-                    <p>Carpet Area</p>
-                    <p>239 Sq.ft</p>
-                    <p>Starting from</p>
-                    <p>Rs. 69.19 Lakh Onwards*</p>
-                    <button>Enquire Now</button>
-                </div>
-            </div>
-
+            <p>Saya Piazza, located in Sector 131 on the Noida Motorway, is about to transform the way people shop. The mall is well situated and near a catchment area with more than 50,000 families. The lovely facade will welcome customers and lead them into the opulent atmosphere of the mall. Saya Piazza is positioned to be the pinnacle of recreational and commercial activities thanks to its intricate design and lavish ornamentation. In addition to grandeur, the building will demonstrate efficiency and provide a place for indulgence. Saya Piazza will provide a shopping experience that is so exceptional and rich that everything else will seem ordinary.</p>
+           </div>
         </div>
-        
-
-
     </div>
-
     
-
-    <div class="floorplan_container" id="floorplan">
-        <h1>Floor Plan</h1>
-        <p>img</p>
-        <p>img</p>
-    </div>
-
-    <div class="gallery_container" id="gallery">
-        <h1>Gallery</h1>
-        <p>img</p>
-        <p>img</p>
-        <p>img</p>
-        <p>img</p>
-    </div>
-
-    <div class="connectivity_container" id="connectivity">
-        <h1>Connectivity</h1>
-        <p>Best Location on Noida Expressway</p>
-        <p>Surrounded by Resiential Societies and Institutions</p>
-        <p>Pure Commercial Land Title </p>
-        <p>Expressway facing premium commercial by Saya Group</p>
-        <p>Nearby proposed Metro Station</p>
-        <p>Accessible from 120m Wide Road</p>
-        <p>img of map</p>
-    </div>
-
-
-    <div class="contact" id="contact">
-        <div class="contact_left">   
-            <h2>Contact Us</h2> 
-            <p>n1234-5678</p>
-            <p>1234-5678</p>
-            <p>johndoe@gmail.com</p>
+    <!-- Form Popup Section -->
+    <div class="form-popup" id="form-popup">
+        <div class="form-content animate">
+            <img src="images/gallery/gallery1.jpg" alt="">
+            <div class="form-heading">
+                <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
+                <h1>Saya Piazza </h1>
+                <p>Hi - Street Shop and Food Court</p>
+                <h2>₹41.91* Lakh Onwards</h2>
+                <form id="formid1">
+                    <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
+                    <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
+                    <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" required>
+                    <input type="text" name="comment1" id="comment1" placeholder="Write down your Comments" required>
+                    <button type="submit" id="submitbtn1">Submit</button>
+                </form>
+            </div>
         </div>
-        <form >
-            <input type="text" id="name" name="name" placeholder="Enter Your Name">
-            <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
-            <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
-            <input type="text" id="comment" name="comment" placeholder="Write down your Comments">
-            <button type="submit" id="submitbtn">Submit</button>
-        </form>
-        <p>Disclaimer:This site is for information purpose only and should not be treated as the official information.</p>
     </div>
-
-
 </body>
+<script src="./script.js"></script>
+</html>
