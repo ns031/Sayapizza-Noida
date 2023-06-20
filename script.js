@@ -120,3 +120,36 @@ var submitbtn=document.getElementById('submitbtn');
               })  
     );}
   });
+
+  var submitbtn2=document.getElementById('submitbtn2');
+  var submitbtn2Form=document.getElementById('formid2');
+  submitbtn2.addEventListener('click',function(e) {
+    e.preventDefault();
+    var senderName2=document.getElementById('name2').value;
+    var senderEmail2=document.getElementById('email2').value;
+    var senderMobile2=document.getElementById('mobile2').value;
+    var senderComment2=document.getElementById('comment2').value;
+    var body2= 'Name: '+ senderName2 + '<br>Mail Id: ' + senderEmail2 + '<br>Number: ' + senderMobile2 + '<br>Message: '+ senderComment2;
+    if(senderName2!='' && senderEmail2!=''  &&senderMobile2!='' && senderComment2!=''){
+    Email.send({
+        SecureToken : "909a4ac7-785c-41be-abe5-1c1e983c5022",
+        To : 'contact@savianmoney.com',
+        From : "saviandemo@gmail.com",
+        Subject : "Enquiry Request - Saya Piazza",
+        Body : body2
+    }).then(
+        Swal.fire({
+              title: 'Success',
+              text: 'Your Enquiry is Successful',
+              confirmButtonColor: '#3085d6',
+              icon: 'success',
+              allowOutsideClick:false,
+              allowEscapeKey:false
+              }).then((result) => {
+              if (result.isConfirmed) {
+                 submitbtn2Form.submit();
+                 window.location.href="index.html";
+              }
+              })  
+    );}
+  });
